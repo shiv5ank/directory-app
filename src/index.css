@@ -1,13 +1,126 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+.header {
+  width: 100vw;
+  height: 50px;
+  background: rgb(10, 111, 161);
+  color: white;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.button-container {
+  display: flex;
+  justify-content: flex-start;
+  margin-top: 60px;
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+.btn {
+  border: none;
+  background: rgb(10, 111, 161);
+  padding: 7px;
+  margin-right: 20px;
+}
+a {
+  font-weight: 800;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+}
+.main {
+  margin-top: 30px;
+  width: 90vw;
+  border: 1px solid black;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.person {
+  width: 100%;
+  text-align: start;
+}
+table {
+  border-collapse: collapse;
+}
+.thead {
+  background: rgb(10, 111, 161);
+  color: white;
+  border: 1px solid black;
+  width: 15vw;
+  padding: 5px;
+}
+input {
+  width: 10vw;
+}
+td {
+  border: 1px solid black;
+  padding: 5px;
+}
+.action {
+  border: none;
+  background-color: white;
+  text-decoration: underline;
+  color: rgb(44, 112, 190);
+  cursor: pointer;
+  margin-right: 20px;
+}
+.refresh-container {
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  width: 90vw;
+  height: 80vh;
+  border: 1px solid black;
+}
+.search {
+  width: 200px;
+  height: 30px;
+}
+.btn-find {
+  background-color: rgb(44, 112, 190);
+  color: white;
+  border: none;
+  width: 50px;
+  height: 30px;
+  margin-left: 20px;
+  cursor: pointer;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.add {
+  width: 10vw;
+  background-color: rgb(44, 112, 190);
+  border: none;
+  color: white;
+  padding: 5px;
+  cursor: pointer;
+  margin-top: 70px;
+  margin-bottom: 15px;
+  margin-left: 70vw;
+}
+
+
+.single-data {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.no-data {
+  margin-top: 20vh;
+}
+.find-detail {
+  border: 8px solid black;
+  margin-top: 20px;
+  text-align: start;
+}
+span{
+  font-weight: 400;
+}
+@media screen and (max-width: 900px) {
+  input {
+    width: 15vw;
+  }
 }
